@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="IAC Webshop">
+    <meta name="keywords" content="IAC, HU, Webshop">
+    <meta name="author" content="Jordy Koppers">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/webshop.js"></script>
+</head>
+
+<body onload="checkForSale()">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">IAC</span> Webshop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="products.html">Products</a></li>
+                    <li id="nav_login"><a href="login.html">Login/Register</a></li>
+                    <li style="display: none" id="nav_account"><a href="account.html">My Account</a></li>
+                    <li><a href="shoppingcart.html">Shopping Cart</a></li>
+                    <li><a href="employee.html">Employee</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="product_page">
+        <div class="container">
+            <div class="productpicture">
+                <img id="productpicture">
+            </div>
+
+            <aside id="sidebarproduct">
+
+                <h1 id="productname"></h1>
+
+                <p id="productdescription"></p>
+
+                <h2 id="productprice"></h2>
+
+                <p>quantity: <input type="number" id="qty" pattern=" 0+\.[0-9]*[1-9][0-9]*$"
+                        onkeypress="return event.charCode >= 48 && event.charCode <= 57"></p>
+
+                <button id="addtocart" name="cart_add">Add to Cart</button>
+                <p id="success"></p>
+
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <p>IAC Workshop, Copyright &copy; 2019</p>
+    </footer>
+    <script src="js/myaccount.js"></script>
+</body>
+
+</html>

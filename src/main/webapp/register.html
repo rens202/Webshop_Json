@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="IAC Webshop">
+    <meta name="keywords" content="IAC, HU, Webshop">
+    <meta name="author" content="Jordy Koppers">
+    <title>IAC Webshop | Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/image-picker.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">IAC</span> Webshop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li id="nav_login" class="current"><a href="login.html">Login/Register</a></li>
+                    <li style="display: none" id="nav_account"><a href="account.html">My Account</a></li>
+                    <li><a href="shoppingcart.html">Shopping Cart</a></li>
+                    <li><a href="employee.html">Employee</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Create your account here!</h1>
+            <p></p>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <div class="reg-col">
+                <form id="regform">
+                    <h1>Register</h1>
+                    <p>Username: <input type="text" name="username"> </p>
+                    <p>Password: <input type="password" name="password"></p>
+                    <p>Name: <input type="text" name="name"></p>
+                    <h3>Address</h3>
+                    <p>Street: <input type="text" name="street"></p>
+                    <p>House Number: <input type="text" name="housenumber"></p>
+                    <p>Choose your profile picture:</p>
+                    <select id="selectImage" class="image-picker" name="picture">
+                        <option data-img-src='https://tpook.nl/wp-content/uploads/2018/03/pepe-the-frog-1272162_1920.jpg'
+                            value='https://tpook.nl/wp-content/uploads/2018/03/pepe-the-frog-1272162_1920.jpg'>
+                        </option>
+                        <option data-img-src='https://images-na.ssl-images-amazon.com/images/I/41We5-L3NwL.jpg' value='https://images-na.ssl-images-amazon.com/images/I/41We5-L3NwL.jpg'>
+                        </option>
+                        <option data-img-src='https://images.poms.omroep.nl/image/635061.jpg' value='https://images.poms.omroep.nl/image/635061.jpg'>
+                        </option>
+                        <option data-img-src='https://image.freepik.com/iconen-gratis/apple-logo_318-40184.jpg' value='https://image.freepik.com/iconen-gratis/apple-logo_318-40184.jpg'>
+                        </option>
+                        <option data-img-src='https://pbs.twimg.com/profile_images/804499790419529728/WS-ZxCKn.jpg'
+                            value='https://pbs.twimg.com/profile_images/804499790419529728/WS-ZxCKn.jpg'>
+                        </option>
+                        <option
+                            data-img-src='https://alertajocs.files.wordpress.com/2015/09/the-legend-of-zelda-triforce-heroes-art-15.jpg?w=349&h=349&crop=1'
+                            value='https://alertajocs.files.wordpress.com/2015/09/the-legend-of-zelda-triforce-heroes-art-15.jpg?w=349&h=349&crop=1'>
+                        </option>
+                        <option
+                            data-img-src='https://ih1.redbubble.net/image.531944912.8717/ap,550x550,12x12,1,transparent,t.u2.png'
+                            value='https://ih1.redbubble.net/image.531944912.8717/ap,550x550,12x12,1,transparent,t.u2.png'>
+                        </option>
+                        <option data-img-src='https://images-na.ssl-images-amazon.com/images/I/6101Je6svzL._SX425_.jpg'
+                            value='https://images-na.ssl-images-amazon.com/images/I/6101Je6svzL._SX425_.jpg'>
+                        </option>
+                        <option data-img-src='https://i.kym-cdn.com/photos/images/original/001/235/521/601.png' value='https://i.kym-cdn.com/photos/images/original/001/235/521/601.png'>
+                        </option>
+                        <option data-img-src='https://images.poms.omroep.nl/image/239339.jpg' value='https://images.poms.omroep.nl/image/239339.jpg'>
+                        </option>
+                    </select>
+                    <input type="button" name="register" id="register" value="Register Now!">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>IAC Workshop, Copyright &copy; 2019</p>
+    </footer>
+
+    <script src="js/myaccount.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/image-picker.js"></script>
+    <script src="js/imagepicker.js"></script>
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

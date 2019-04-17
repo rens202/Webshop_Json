@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="IAC Webshop">
+    <meta name="keywords" content="IAC, HU, Webshop">
+    <meta name="author" content="Jordy Koppers">
+    <title>IAC Webshop | Products</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/webshop.js"></script>
+</head>
+
+<body onload="loadAllProducts()">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">IAC</span> Webshop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="products.html">Products</a></li>
+                    <li id="nav_login"><a href="login.html">Login/Register</a></li>
+                    <li style="display: none" id="nav_account"><a href="account.html">My Account</a></li>
+                    <li><a href="shoppingcart.html">Shopping Cart</a></li>
+                    <li><a href="employee.html">Employee</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="showcase">
+        <div class="container">
+            <h1>Check out all these products</h1>
+        </div>
+    </div>
+
+    <section id="products">
+        <div class="container">
+            <h1>Products</h1>
+            <aside id="cat_picker">
+                <div id="categories">
+                </div>
+            </aside>
+
+            <article id="productspage">
+
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>IAC Workshop, Copyright &copy; 2019</p>
+    </footer>
+    <script src="js/myaccount.js"></script>
+</body>
+
+</html>

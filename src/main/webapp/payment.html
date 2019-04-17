@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="IAC Webshop">
+  <title>IAC Webshop | Payment</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">IAC</span>Webshop</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li id="nav_login"><a href="login.html">Login/Register</a></li>
+          <li style="display: none" id="nav_account"><a href="account.html">My Account</a></li>
+          <li class="current"><a href="shoppingcart.html">Shopping Cart</a></li>
+          <li><a href="employee.html">Employee</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="showcase">
+    <div class="container">
+      <h1>Thanks for your order</h1>
+    </div>
+  </section>
+
+  <section id="payment">
+    <div class="container">
+      <form id="regForm" action="/action_page.php">
+        <h1>Payment:</h1>
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          <h3>
+            </h>Name:</h3>
+          <p><input type="text" placeholder="First + Last Name" oninput="this.className = ''" name="payment_name"></p>
+          <h3>Address:</h3>
+          <p><input type="text" placeholder="Street" oninput="this.className =''" name="payment_street"></p>
+          <p><input type="text" placeholder="House Number" oninput="this.className =''" name="payment_housenumber"></p>
+        </div>
+        <h3>Your Order:</h3>
+        <div id="carttable"></div>
+        <div class="tab">
+          <input type="checkbox" placeholder="test" name="payment_check">
+          <p>Agreement for payment</p>
+        </div>
+        <div class="tab">
+          <h3>Finish:</h3>
+          <p>Thanks for your purchase!</p>
+          <p>Your ordernumber is: ######</p>
+        </div>
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>IAC Workshop, Copyright &copy; 2019</p>
+  </footer>
+
+  <script src="js/myaccount.js"></script>
+  <script src="./js/payment.js"></script>
+</body>
+
+
+</html>

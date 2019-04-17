@@ -1,0 +1,10 @@
+DROP TABLE Users;
+DROP TABLE Advertisements;
+DROP TABLE Category_Product;
+DROP TABLE Categories;
+DROP TABLE Orderlines;
+DROP TABLE Orders;
+DROP TABLE Products;
+DROP TABLE Accounts;
+DROP TABLE Customers;
+DROP TABLE Address;
